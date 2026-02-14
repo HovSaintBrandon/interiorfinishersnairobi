@@ -1,0 +1,14 @@
+:root {
+  --bg: hsl(20, 10%, 8%);
+  --fg: hsl(40, 20%, 90%);
+  --card: hsl(20, 8%, 12%);
+  --card-fg: hsl(40, 20%, 90%);
+  --gold: hsl(38, 80%, 55%);
+  --gold-light: hsl(38, 70%, 70%);
+  --gold-dark: hsl(38, 90%, 40%);
+  --secondary: hsl(20, 6%, 18%);
+  --secondary-fg: hsl(40, 15%, 80%);
+  --muted: hsl(30, 10%, 55%);
+  --border: hsl(30, 8%, 20%);
+  --cream: hsl(40, 30%, 92%);
+}
