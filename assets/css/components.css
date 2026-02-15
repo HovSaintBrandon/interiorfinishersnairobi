@@ -450,6 +450,29 @@
     font-size: 0.85rem;
     color: var(--muted);
     line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.link-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gold);
+    transition: color 0.3s;
+}
+
+.link-arrow:hover {
+    color: var(--gold-light);
+}
+
+.link-arrow svg {
+    transition: transform 0.3s;
+}
+
+.link-arrow:hover svg {
+    transform: translateX(4px);
 }
 
 /* PROCESS */
