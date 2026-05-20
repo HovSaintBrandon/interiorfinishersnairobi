@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Portfolio | InteriorFinishes Nairobi | Fitout Projects Kenya</title>
+    <meta name="description"
+        content="View our premium interior design and finishing projects in Nairobi. Explore real-world gypsum ceilings, glass office partitions, and kitchens in Karen, Runda, and Westlands." />
+    <meta name="keywords"
+        content="Interior Design Projects Kenya, Office Fitout Portfolio Nairobi, Gypsum Ceiling Gallery, TV Wall Panels Karen, Kitchen Design Westlands" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="canonical" href="https://www.interiorfinishesnairobi.co.ke/portfolio.html" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <style>
+        .filter-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            padding: 0.6rem 1.5rem;
+            cursor: pointer;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: var(--gold);
+            color: var(--gold);
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .filters-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .portfolio-img-wrap {
+            position: relative;
+            height: 260px;
+            overflow: hidden;
+            background: #1a1a1a;
+        }
+
+        .portfolio-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-item:hover .portfolio-img-wrap img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-desc {
+            padding: 1.5rem;
+        }
+
+        .portfolio-desc h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-desc .location {
+            color: var(--gold);
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .portfolio-desc p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--gray-light, #ccc);
+        }
+    </style>
+
+    <!-- Add Schema -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Interior Design & Fitout Portfolio",
+    "description": "Showcase of luxury home renovations, gypsum ceilings, commercial office partitioning, and bespoke cabinetry in Nairobi, Kenya.",
+    "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "InteriorFinishes Nairobi"
+    }
+  }
+  </script>
+</head>
+
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="nav-brand">
+            <img src="assets/img/logo.png" alt="Interior Finishes Logo"
+                style="height: 40px; vertical-align: middle; margin-right: 8px;">
+            Interior<span>Finishes</span><small>Nairobi</small>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="nav-cta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                Get a Quote
+            </a>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">&#9776;</button>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="nav-cta">Get a Quote</a>
+        </div>
+    </header>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header section-padding gradient-dark">
+        <div class="max-w">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> &gt; <span>Portfolio</span>
+            </div>
+            <h1 class="heading-display">Our Project <span class="text-gold">Gallery</span></h1>
+            <p class="body-text">Explore our collection of successfully completed high-end projects across Nairobi's premier neighborhoods.</p>
+        </div>
+    </section>
+
+    <!-- ========== PORTFOLIO GRID ========== -->
+    <section class="section-padding">
+        <div class="max-w">
+            <div class="filters-container">
+                <button class="filter-btn active" onclick="filterGallery('all')">All Projects</button>
+                <button class="filter-btn" onclick="filterGallery('residential')">Residential</button>
+                <button class="filter-btn" onclick="filterGallery('commercial')">Commercial</button>
+                <button class="filter-btn" onclick="filterGallery('ceilings-walls')">Ceilings & Walls</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Penthouse Living -->
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-img-wrap">
+                        <img src="assets/img/projects/living_room.png" alt="Luxury residential penthouse living room design in Nairobi" loading="lazy">
+                    </div>
+                    <div class="portfolio-desc">
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Kilimani, Nairobi</div>
+                        <h3>Luxury Penthouse Living Room</h3>
+                        <p>Complete styling featuring modern double-layer gypsum board ceilings, recessed linear LED fixtures, custom TV wood framing, and premium wall finishes.</p>
+                    </div>
+                </div>
+
+                <!-- Open Office -->
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-img-wrap">
+                        <img src="assets/img/projects/office.png" alt="Frameless glass office partition installation in Westlands" loading="lazy">
+                    </div>
+                    <div class="portfolio-desc">
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Westlands, Nairobi</div>
+                        <h3>Open Plan Corporate Office</h3>
+                        <p>Fabrication and installation of frameless 12mm tempered safety glass partitions, acoustic gypsum drywalls, and frosted branding logos for corporate office layouts.</p>
+                    </div>
+                </div>
+
+                <!-- Modern Kitchen -->
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-img-wrap">
+                        <img src="assets/img/projects/kitchen.png" alt="Bespoke kitchen cabinet design and fitout in Karen" loading="lazy">
+                    </div>
+                    <div class="portfolio-desc">
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Karen, Nairobi</div>
+                        <h3>Bespoke Acrylic Kitchen Fitout</h3>
+                        <p>Custom fabricated handleless kitchen cabinetry using high-density MR MDF panels, original Blum soft-close fittings, and imported quartz stone countertops.</p>
+                    </div>
+                </div>
+
+                <!-- Corporate Reception -->
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-img-wrap">
+                        <img src="assets/img/projects/reception.png" alt="3D office reception signage and wood panels in Upperhill" loading="lazy">
+                    </div>
+                    <div class="portfolio-desc">
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Upperhill, Nairobi</div>
+                        <h3>Corporate Reception Lobby</h3>
+                        <p>Modern reception lounge featuring high-end wood slat wall cladding, 3D backlit company signage, and seamless custom reception desk joinery.</p>
+                    </div>
+                </div>
+
+                <!-- Grand Dining -->
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-img-wrap">
+                        <img src="assets/img/projects/dining.png" alt="Luxury dining room gypsum ceiling and wall cladding in Runda" loading="lazy">
+                    </div>
+                    <div class="portfolio-desc">
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Runda, Nairobi</div>
+                        <h3>Grand Dining Room Accent Wall</h3>
+                        <p>Custom fluted WPC wall panel backdrop combined with metallic plaster texturing, complete with a perimeter cove ceiling design.</p>
+                    </div>
+                </div>
+
+                <!-- Luxury Bathroom -->
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-img-wrap">
+                        <img src="assets/img/projects/bathroom.png" alt="Custom bathroom vanity and waterproof wall panels in Muthaiga" loading="lazy">
+                    </div>
+                    <div class="portfolio-desc">
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Muthaiga, Nairobi</div>
+                        <h3>Luxury Master Bathroom</h3>
+                        <p>Complete design containing moisture-proof gypsum ceilings, wall panel cladding, custom floating vanity cabinets, and elegant copper gold finishes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="max-w footer-grid">
+            <div class="footer-brand">
+                <span class="nav-brand">Interior<span>Finishes</span></span>
+                <p>Premium interior design solutions in Nairobi, Kenya. Transforming spaces into unforgettable
+                    experiences.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/interiorfinishesnairobi" class="social-icon" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg></a>
+                    <a href="https://www.instagram.com/interiorfinishesnairobi" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/company/interiorfinishesnairobi" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a
+                    href="services.html">Services</a><a href="portfolio.html">Projects</a><a
+                    href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <p><a href="services.html" style="color: inherit; text-decoration: none;">Residential Design</a></p>
+                <p><a href="office-partitioning.html" style="color: inherit; text-decoration: none;">Commercial &
+                        Partitioning</a></p>
+                <p><a href="kitchen-fitouts.html" style="color: inherit; text-decoration: none;">Kitchen & Fitouts</a></p>
+                <p><a href="home-automation.html" style="color: inherit; text-decoration: none;">Home Automation</a></p>
+                <p><a href="gypsum-ceilings.html" style="color: inherit; text-decoration: none;">Gypsum Ceilings</a></p>
+                <p><a href="wall-panels.html" style="color: inherit; text-decoration: none;">Wall Panels</a></p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p>
+                    <a href="https://wa.me/254718816070" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">
+                        <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.1em; margin-right: 4px;"></i>
+                        (+254 718 816 070)
+                    </a>
+                </p>
+                <p>24/7 Service Available</p>
+                <p>info@interiorfinishesnairobi.co.ke</p>
+                <p>Ring Road Parklands, Nairobi, Kenya</p>
+            </div>
+        </div>
+        <div class="footer-bottom max-w">
+            <p>&copy; 2026 InteriorFinishes Nairobi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Filter JS Script -->
+    <script>
+        function filterGallery(category) {
+            // Update active button
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter items
+            const items = document.querySelectorAll('.portfolio-item');
+            items.forEach(item => {
+                if (category === 'all') {
+                    item.style.display = 'block';
+                } else if (category === 'ceilings-walls') {
+                    // Item matches ceilings or walls
+                    const titleText = item.querySelector('h3').textContent.toLowerCase();
+                    const descText = item.querySelector('p').textContent.toLowerCase();
+                    if (titleText.includes('ceiling') || titleText.includes('wall') || descText.includes('ceiling') || descText.includes('wall')) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                } else {
+                    const itemCat = item.getAttribute('data-category');
+                    if (itemCat === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+
+    <!-- Modular JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+
+</html>

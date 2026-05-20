@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions | InteriorFinishes Nairobi</title>
+    <meta name="description"
+        content="Get answers to common questions about gypsum ceilings, office partitioning, wall paneling, kitchen fitout costs, and flooring installations in Nairobi, Kenya." />
+    <meta name="keywords"
+        content="Interior Design FAQs Kenya, Gypsum Ceiling Cost Nairobi FAQ, Glass Partitioning Timelines, WPC Wall Panel Cleaning, Smart Home Systems Kenya" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="canonical" href="https://www.interiorfinishesnairobi.co.ke/faq.html" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <style>
+        .faq-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            transition: border-color 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--gold);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .faq-question h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            color: var(--white);
+            margin: 0;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            display: none;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .faq-toggle-icon {
+            color: var(--gold);
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+    </style>
+
+    <!-- FAQPage JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does gypsum ceiling installation cost in Nairobi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "name": "Gypsum ceiling installation typically ranges from KES 2,200 to KES 3,500 per square meter. This price covers galvanized metal studs, standard gypsum boards, joint fillers, taping, plaster skimming, cornices, and primer paint coatings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between SPC and Laminate flooring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "name": "SPC (Stone Plastic Composite) is completely waterproof, highly dent-resistant, and can be installed in kitchens and dining areas. Laminate flooring uses a wood-fiber core that will swell and buckle if exposed to standing water, making it best suited for bedrooms and dry corridors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are glass office partitions soundproof?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "name": "Yes. A standard 10mm tempered glass partition dampens sound up to 32-35 dB, which is sufficient for normal office conversational privacy. For boardrooms requiring high confidentiality, we install double-glazed glass systems with internal acoustic seals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can smart home automation be retrofitted in an existing home?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "name": "Absolutely. For completed homes, we install wireless smart home switches and micro-modules (operating on Z-Wave or Zigbee mesh networks) directly inside your existing wall boxes, requiring no wall breaking or cabling."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="nav-brand">
+            <img src="assets/img/logo.png" alt="Interior Finishes Logo"
+                style="height: 40px; vertical-align: middle; margin-right: 8px;">
+            Interior<span>Finishes</span><small>Nairobi</small>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="nav-cta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                Get a Quote
+            </a>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">&#9776;</button>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="nav-cta">Get a Quote</a>
+        </div>
+    </header>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header section-padding gradient-dark">
+        <div class="max-w">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> &gt; <span>FAQs</span>
+            </div>
+            <h1 class="heading-display">Frequently Asked <span class="text-gold">Questions</span></h1>
+            <p class="body-text">Find answers to common questions about interior design, gypsum ceilings, partitioning, and renovation budgets in Kenya.</p>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ACCORDION ========== -->
+    <section class="section-padding">
+        <div class="max-w" style="max-width: 900px;">
+            
+            <!-- Gypsum -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h3>How much does gypsum ceiling installation cost in Nairobi?</h3>
+                    <div class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p class="body-text">Gypsum ceiling installation typically ranges from <strong>KES 2,200 to KES 3,500 per square meter</strong>. This price covers galvanized metal studs, standard gypsum boards, joint fillers, fiber tape, plaster skimming, cornices, and primer paint coatings. Decorative bulkheads and custom design features will increase the cost slightly.</p>
+                </div>
+            </div>
+
+            <!-- Flooring -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h3>What is the difference between SPC and Laminate flooring?</h3>
+                    <div class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p class="body-text">SPC (Stone Plastic Composite) is completely waterproof, highly dent-resistant, and can be safely installed in kitchens, bathrooms, and dining areas. Laminate flooring uses a wood-fiber core that will swell and buckle if exposed to standing water, making it best suited for bedrooms, study areas, and dry corridors.</p>
+                </div>
+            </div>
+
+            <!-- Partitions -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h3>Are glass office partitions soundproof?</h3>
+                    <div class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p class="body-text">Yes. A standard 10mm tempered glass partition dampens sound up to 32-35 dB, which is sufficient for normal office conversational privacy. For boardrooms and executive spaces requiring high confidentiality, we install double-glazed glass systems with internal acoustic seals or specialized mineral wool insulated drywalls.</p>
+                </div>
+            </div>
+
+            <!-- Smart home -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h3>Can smart home automation be retrofitted in an existing home?</h3>
+                    <div class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p class="body-text">Yes. For completed homes, we install wireless smart home switches and micro-modules (operating on Z-Wave or Zigbee mesh networks) directly inside your existing wall boxes, requiring no wall breaking or cabling. This allows smart lighting and voice assistant control without any structural damage.</p>
+                </div>
+            </div>
+
+            <!-- Kitchens -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h3>What is the best board for kitchen cabinet framing?</h3>
+                    <div class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p class="body-text">We recommend Moisture-Resistant MDF (Medium Density Fiberboard) or high-grade marine plywood. Standard particle boards swell easily in damp kitchen environments. MR MDF provides excellent structural strength, stays flat, and resists humidity.</p>
+                </div>
+            </div>
+
+            <!-- Wall panels -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h3>How do I clean and maintain fluted WPC wall panels?</h3>
+                    <div class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p class="body-text">Fluted WPC panels are extremely low maintenance. Because they are moisture-proof and termite-proof, you only need to wipe them with a damp microfiber cloth to remove dust. Avoid harsh chemical solvents or steel scrubbers to prevent scratching the pre-finished foil layers.</p>
+                </div>
+            </div>
+
+            <!-- Timelines -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h3>What are your typical project timelines?</h3>
+                    <div class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p class="body-text">Timelines depend on project size. A standard gypsum ceiling design for a living room takes 4 to 6 days. Office partitions for a medium workspace take 5 to 7 days. Complete kitchen fitouts require about 10 to 14 days of workshop fabrication and 4 to 6 days of onsite mounting and stone installation.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="max-w footer-grid">
+            <div class="footer-brand">
+                <span class="nav-brand">Interior<span>Finishes</span></span>
+                <p>Premium interior design solutions in Nairobi, Kenya. Transforming spaces into unforgettable
+                    experiences.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/interiorfinishesnairobi" class="social-icon" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg></a>
+                    <a href="https://www.instagram.com/interiorfinishesnairobi" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/company/interiorfinishesnairobi" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a
+                    href="services.html">Services</a><a href="portfolio.html">Projects</a><a
+                    href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <p><a href="services.html" style="color: inherit; text-decoration: none;">Residential Design</a></p>
+                <p><a href="office-partitioning.html" style="color: inherit; text-decoration: none;">Commercial &
+                        Partitioning</a></p>
+                <p><a href="kitchen-fitouts.html" style="color: inherit; text-decoration: none;">Kitchen & Fitouts</a></p>
+                <p><a href="home-automation.html" style="color: inherit; text-decoration: none;">Home Automation</a></p>
+                <p><a href="gypsum-ceilings.html" style="color: inherit; text-decoration: none;">Gypsum Ceilings</a></p>
+                <p><a href="wall-panels.html" style="color: inherit; text-decoration: none;">Wall Panels</a></p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p>
+                    <a href="https://wa.me/254718816070" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">
+                        <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.1em; margin-right: 4px;"></i>
+                        (+254 718 816 070)
+                    </a>
+                </p>
+                <p>24/7 Service Available</p>
+                <p>info@interiorfinishesnairobi.co.ke</p>
+                <p>Ring Road Parklands, Nairobi, Kenya</p>
+            </div>
+        </div>
+        <div class="footer-bottom max-w">
+            <p>&copy; 2026 InteriorFinishes Nairobi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Accordion toggle script -->
+    <script>
+        function toggleFaq(element) {
+            const item = element.parentElement;
+            const wasActive = item.classList.contains('active');
+            
+            // Close all items
+            const allItems = document.querySelectorAll('.faq-item');
+            allItems.forEach(i => i.classList.remove('active'));
+            
+            // Toggle clicked item
+            if (!wasActive) {
+                item.classList.add('active');
+            }
+        }
+    </script>
+
+    <!-- Modular JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+
+</html>
